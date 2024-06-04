@@ -1,0 +1,168 @@
+
+body {
+
+    padding: 0;
+    box-sizing: inherit;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh; 
+    background-color: rgb(60, 105, 77);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 251, 251) ;
+    
+}
+
+nav {
+    margin: 0 auto 20px;
+    width: 50%;
+    padding: 20px;
+    background-color: black;
+    border-radius: 15px;
+    flex-direction: row;
+    display:flex;
+    flex-wrap: wrap;
+    min-width: 600px;
+    justify-content: space-evenly;
+    text-align: start;
+}
+
+.banner-image {
+    background-image: url(./image/images.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    align-self: center;
+    width: 40%;
+    min-width: 700px;
+    height: 200px;
+    
+}
+
+/* @media only screen and (min-width: 800px) {
+    .banner-image {
+        display: block !important;
+        width: 50%;
+        min-width: 225px;
+    }
+    
+} */
+
+@media (max-width: 600px) {
+    .banner-image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .banner-image {
+        display: none;
+    }
+}
+
+
+
+.header-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: black;
+    font-size: 44px;
+
+}
+
+header {
+    display: flex; 
+    width: 100%;
+    height: fit-content;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.side-menu {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    width: 100%;
+}
+
+.side-menu img {
+    height: 450px;
+    width: 50%;
+
+}
+
+.steps-number {
+    position: relative;
+    flex: 1;
+    justify-content: center;
+    background-size: contain;
+}
+
+
+.main-classes {
+    height: 250px;
+    background-color: rgb(218, 75, 32);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-bottom: 100px;
+    flex-grow: inherit;
+    
+}
+
+.game {
+    background-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.show {
+    background-color: black;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+
+
+
+
+
+
+
+
+footer {
+    margin: 0 auto 20px;
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    background-color: black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: start;
+}
